@@ -1,38 +1,169 @@
-.App {
-  text-align: center;
+.weather_app{
+  display:flex;
+  height: 100vh;
+  width: 70vw;
+  padding: 10px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* For the Left side work */
+/* -----------------------*/
+.base{
+  width: 60%;
+  color:white;
+  display: flex;
+  flex-direction: column;
+  gap:300px 100px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.header{
+  /* background-color: aliceblue; */
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  justify-content:flex-end;
+  align-items: flex-end;
+  padding: 0px 5px 0px 5px;
+  margin: 0px 5px 0px 5px;
+
+}
+
+.place {
+  font-weight: 800;
+}
+.country_code{
+  /* background: #5e8585; */
+  margin-top: -30px;
+}
+
+.footer{
+  margin-top: auto;
+  display: flex;
+  font-family:'Courier New', Courier, monospace;
+  margin-left: 10px;
+}
+
+.footer .week{
+  font-size: 1.5rem;
+  font-weight: 200;
+  margin-right: 10px;
+  margin-left: auto;
+}
+
+.footer .time{
+  font-size: 3rem;
+  font-weight: 200;
+  margin-right: 10px;
+  margin-left: auto;
+}
+
+.footer .temp{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 7rem;
+  font-weight: 200;
+  margin-right: 10px;
+  margin-left: auto;
+}
+
+.footer .temp span{
+  font-size: 4rem;
+  font-weight: 400;
+}
+
+.footer .temp .unit{
+  font-size: 4rem;
+  font-weight: 400;
+}
+
+
+/* For the Right side work */
+/* -----------------------*/
+
+.details
+{
   display: flex;
   flex-direction: column;
   align-items: center;
+  color:white;
+  background-color: black;
+  width: 40%;
+}
+
+.icon
+{
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  margin-top: 10px;
+  font-size: 7rem;
+}
+
+.title
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+  font-size: 3rem;
+  border-bottom: 1px solid white;
+  width: 100%;
+  padding-bottom: 5px;
+}
+
+.search_input
+{
+  border: none;
+  border-bottom: 1px solid white;
+  background-color: black;
   color: white;
+  font-size: 1.5rem;
+  outline:0px;
+  margin-right:10px;
+  padding: 10px;
 }
 
-.App-link {
-  color: #61dafb;
+.city
+{
+  margin-top: 10px;
+  padding: 20px;
+  font-size: 2rem;
+  font-weight: 600;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.badges
+{
+  width:70%;
+}
+
+.badge 
+{
+  width: 100%;
+  border-top: 1px solid white;
+  display: flex;
+  justify-content: space-between;
+  align-content: space-between;
+  font-size: 1.5rem;
+  padding: 5px;
+  overflow: hidden;
+}
+
+.badge .name, .badge .value
+{
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+.badge .value
+{
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.badge span{
+  padding: 10px;
 }
