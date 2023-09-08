@@ -93,7 +93,11 @@ const weatherContext = createContext();
 const Weather = () => {
     const [query,setQuery] = useState('');
     const [weather_data,setWeather_data] = useState({});
-    const API_KEY = "be34786903c95d0d1839a0abe66dc19e"
+
+    /* PASTE YOUR API KEY HERE */
+    const API_KEY = ""
+
+
     const API_key = API_KEY;
     var lat = 28.6333;
     var lon = 77.2167;
