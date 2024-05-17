@@ -1,5 +1,3 @@
-I'd be glad to create a comprehensive README.md documentation for your Weather App on GitHub:
-
 **Project Name:** Weather App
 
 **Description:**
@@ -18,6 +16,12 @@ Weather conditions are visually represented using a combination of:
 * **Thematic icons:** Provided by OpenWeatherMap API
 * **Background images:** Sourced from the internet to enhance the visual experience
 
+**Screenshots**
+
+![](screenshots/pasted_image_0.png)
+![](screenshots/pasted_image_1.png)
+![](screenshots/pasted_image_2.png)
+
 **Key Features:**
 
 * **Intuitive UI:** Clean and straightforward design for easy access to weather data.
@@ -35,7 +39,7 @@ Weather conditions are visually represented using a combination of:
 
 1. **Clone the Repository:**
    ```bash
-   git clone https://github.com/<your-username>/weather-app.git
+   git clone https://github.com/akhtarmdsaad/react-weatherapp.git
    ```
 2. **Install Dependencies:**
    Navigate to the project directory and run:
